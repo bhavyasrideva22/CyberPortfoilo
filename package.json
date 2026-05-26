@@ -7,6 +7,9 @@
   },
   "scripts": {
     "build": "npm install --prefix portfolio && npm run build --prefix portfolio",
-    "start": "npm run start --prefix portfolio"
+    "start": "serve -s portfolio/dist -l ${PORT:-10000}"
+  },
+  "dependencies": {
+    "serve": "^14.2.6"
   }
 }
