@@ -1,5 +1,8 @@
 # Repo root Blueprint — app lives in /portfolio
 # https://render.com/docs/static-sites
+#
+# Option A (recommended): Static Site — no start command needed
+# Option B: Web Service — uses root package.json → portfolio/
 
 services:
   - type: web
@@ -15,3 +18,13 @@ services:
       - type: rewrite
         source: /*
         destination: /index.html
+
+  # Uncomment for Web Service instead of Static Site:
+  # - type: web
+  #   name: portfolio-bhavya-web
+  #   runtime: node
+  #   buildCommand: npm install && npm run build
+  #   startCommand: npm start
+  #   envVars:
+  #     - key: NODE_VERSION
+  #       value: '20'

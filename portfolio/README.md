@@ -22,7 +22,39 @@ Static files are output to `dist/`.
 
 ## Deploy on Render
 
-This project is a **static** Vite + React site. Use a **Static Site** (not a Node Web Service).
+### Fix: `Couldn't find a package.json in /opt/render/project/src`
+
+Your app is in the **`portfolio/`** folder. Render was running from the repo root with `yarn start`.
+
+**Do this in Render Dashboard → your service → Settings:**
+
+| Setting | Value |
+|--------|--------|
+| **Root Directory** | `portfolio` |
+| **Build Command** | `npm install && npm run build` |
+| **Start Command** | `npm start` |
+
+Do **not** use `yarn start`. Use **npm** only.
+
+**Or** leave Root Directory empty and use the root `package.json` (already added) with:
+
+| Setting | Value |
+|--------|--------|
+| **Build Command** | `npm install && npm run build` |
+| **Start Command** | `npm start` |
+
+### Recommended: Static Site (no start command)
+
+Use **Static Site** instead of Web Service:
+
+| Setting | Value |
+|--------|--------|
+| **Root Directory** | `portfolio` |
+| **Build Command** | `npm install && npm run build` |
+| **Publish directory** | `dist` |
+| **Rewrite** | `/*` → `/index.html` |
+
+Environment: `NODE_VERSION` = `20`
 
 ### Option A — Blueprint (`render.yaml`)
 

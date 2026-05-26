@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-bhavya-root",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "npm install --prefix portfolio && npm run build --prefix portfolio",
+    "start": "npm run start --prefix portfolio"
+  }
+}
