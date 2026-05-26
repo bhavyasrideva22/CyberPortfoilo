@@ -26,7 +26,8 @@ export const aboutParagraphs = [
 ];
 
 export const EMAIL = 'bhavyadeva2329@gmail.com';
-export const RESUME_URL = '/resume.pdf';
+export const RESUME_URL =
+  'https://drive.google.com/file/d/1NqcPKyJ-3mawJ5MmrjVmvOqeJYkn2px2/view?usp=sharing';
 
 export const INTERNSHIP_CERTIFICATE_URL =
   'https://drive.google.com/file/d/1_RZKIrqefUPznQGj014sqg-omYk16ay7/view';

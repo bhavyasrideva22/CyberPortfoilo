@@ -96,7 +96,9 @@ Static Site is simpler, faster, and free-tier friendly.
 
 ## Resume
 
-Place your resume PDF at `public/resume.pdf` so the **Resume** button in About Me works.
+Your resume button opens this Google Drive PDF:
+
+`https://drive.google.com/file/d/1NqcPKyJ-3mawJ5MmrjVmvOqeJYkn2px2/view?usp=sharing`
 
 ## Project structure
 

@@ -23,7 +23,6 @@ export default function About() {
                 className="btn btn-outline"
                 target="_blank"
                 rel="noopener noreferrer"
-                download
               >
                 📄 Resume
               </a>
