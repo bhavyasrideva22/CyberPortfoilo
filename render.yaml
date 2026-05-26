@@ -1,10 +1,11 @@
-# Use render.yaml at repo root (../render.yaml) with rootDir: portfolio
-# This file is a reference if you deploy only the portfolio folder as the repo root.
+# Repo root Blueprint — app lives in /portfolio
+# https://render.com/docs/static-sites
 
 services:
   - type: web
     name: portfolio-bhavya
     runtime: static
+    rootDir: portfolio
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
